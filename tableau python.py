@@ -79,3 +79,103 @@ def pairslist(T):
   print("la liste des nombres pairs est",nombrepair)
 T = [12, 5, 8, 13, 19, 2, 6]
 pairslist(T)
+
+
+
+
+# Saisir la taille actuelle du tableau
+N = int(input("Saisir le nombre d'éléments : "))
+ 
+# intialiser la taille de tableau avec N
+tab=[0]*N;
+ 
+# Saisir les éléments du tableau source
+for i in range(N):
+    tab[i]=int(input("Saisir l'élement {0} : ".format(i+1)))
+ 
+# afficher les éléments négatifs du tableau tab
+for i in range(N):
+  if(tab[i]<0):
+    print(tab[i],end=', ')
+  # calcul somme 2  
+    
+    # Saisir la taille actuelle du tableau
+N = int(input("Saisir le nombre d'éléments : "))
+ 
+# intialiser la taille de tableau avec N
+tab=[0]*N;
+ 
+# Saisir les éléments du tableau source
+for i in range(N):
+    tab[i]=int(input("Saisir l'élement {0} : ".format(i+1)))
+ 
+# Ajouter chaque élément du tableau à somme
+somme=0
+for i in range(N):
+    somme = somme + tab[i]
+ 
+print("Somme de tous les éléments du tableau = ",somme)
+# min,max
+
+N = int(input("saisir le nombre d'éléments: "))
+tab=[0]*N
+for i in range(N):
+  tab[i]=int(input("saisir l'élément {1}: ".format(i)))
+max=tab[0]
+min=tab[0]
+
+for i in range(N):
+ if(tab[i]>max):
+   max=tab[i]
+ if(tab[i]<min):
+   min=tab[i]
+print("maximum= ",max)
+print("minimum= ",min)
+
+
+#nombre des pairs et impairs
+
+# Saisir la taille actuelle du tableau
+N = int(input("Saisir le nombre d'éléments : "))
+ 
+# intialiser la taille de tableau avec N
+tab=[0]*N
+ 
+# Saisir les éléments du tableau source
+for i in range(N):
+    tab[i]=int(input("Saisir l'élement {0} : ".format(i+1)))
+ 
+ 
+# En supposant qu'il y a 0 éléments pairs et impairs
+pair = 0
+impair = 0
+ 
+for i in range(N):
+    # Si l'élément courant du tableau est pair, incrémenter le nombre pair
+    if (tab[i] % 2 == 0):
+        pair+=1
+    else:
+        impair+=1
+ 
+print("Total des éléments pairs: ",pair)
+print("Total des éléments impairs : " ,impair)
+
+
+
+# afficher les éléments négatifs
+
+# Saisir la taille actuelle du tableau
+N = int(input("Saisir le nombre d'éléments : "))
+ 
+# intialiser la taille de tableau avec N
+tab=[0]*N;
+ 
+# Saisir les éléments du tableau source
+for i in range(N):
+    tab[i]=int(input("Saisir l'élement {0} : ".format(i+1)))
+ 
+print("Les éléments négatifs du tableau sont : ")
+for i in range(N):
+    # Si l'élément de tableau actuel est négatif */
+    if (tab[i] < 0):
+        print(tab[i],end=", ")
